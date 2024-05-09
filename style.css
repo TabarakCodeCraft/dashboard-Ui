@@ -3,6 +3,10 @@
     margin: 0;
     font-family: 'Mulish', sans-serif;
 }
+body{
+    width: 100%;
+    background: #f1f7ff;
+}
 
 .sidebar{
 height: 809px;
@@ -50,7 +54,7 @@ header{
 top: 0;
  margin-left: 60px;
  height: 70px;
- width: 1300px;
+ width: 100%;
  box-shadow: 0px 2px 10px 0px #4C8DEB1A;
  background: #FFFFFF;
 }
@@ -104,18 +108,18 @@ top: 0;
 }
 .page{
     margin-left: 60px;
-    width: 1300px;
+    width: 100%;
     height: 100vh;
     display: flex;
     background: #f1f7ff;
-    gap: 10px;
+
 
 }
 .page .left{
-width: 400px;
+width: 30%;
 }
 .page .right{
-width: 900px;
+width: 70%;
 }
 .left .title{
     display: flex;
@@ -258,7 +262,7 @@ font-weight: 700;
 
 .right .btn{
     display: flex;
-    justify-content: end;
+   margin-left: 772px;
     margin-top: 50px;
     border: none;
 }
@@ -283,7 +287,7 @@ margin: 10px;
     font-size: 14px;
 }
 .right .topRight{
-    width: 890px;
+    width: 900px;
     height: 50px;
     background: #FFFFFF;
     display: flex;
@@ -334,8 +338,8 @@ display: flex;
 }
 .right .cardRight{
     margin-top: 10px;
-    width: 890px;
-    height: 500px;
+    width: 900px;
+    height: 520px;
     background: #FFFFFF;
 
 }
@@ -346,21 +350,23 @@ margin-left: 20px;
 position: relative;
 align-items: center;
 }
-.cardRight .headerRight .line {
-    width: 850px;
+.cardRight .line {
+    width: 840px;
     height: 1px;
+    margin-left: 20px;
     background: #A0BCE493; 
-    position: absolute;
-    top: 50px;
+    position: relative;
+    top: 10px;
 }
-/* .cardRight .active-line{
-      height: 2px;
-      background: #2350BC;
-      position: absolute;
-      left: 0;
-      top: 20px;
-      width: 60px;
-} */
+.cardRight .linne{
+    position: relative;
+    height: 2px;
+    margin-left: 20px;
+    background:#4C8DEB;
+    width: 55px;
+    top: 9px;
+}
+
 .cardRight .headerRight h4 {
     margin-top: 20px;
     font-size: 14px;
@@ -508,12 +514,52 @@ table {
     border-collapse: collapse;
     width: 90%;
     margin-left: 28px;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+table thead th{
+    color: #405169;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
 }
 table td {
     padding: 10px 5px;
     color: #405169;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     text-align: center;
+}
+.color{
+    color: red;
+}
+.white{
+    color:#FFFFFF;
+}
+.invoiced{
+    color: #FFFFFF;
+    background: #5A91D6;
+    border-radius: 40%;
+    width: 40px;
+    height: 10px;
+}
+.DueDate{
+    color: #FFFFFF;
+    background: #FFAB49;
+    border-radius: 40%;
+    width: 46px;
+    height: 5px;
+}
+.Paid{
+    color: #FFFFFF;
+    background: #5AD6B0;
+    border-radius: 40%;
+    width: 46px;
+    height: 5px;
+}
+.Overdue{
+    color: #FFFFFF;
+    background: #EE5D70;
+    border-radius: 40%;
+    width: 46px;
+    height: 5px;
 }
