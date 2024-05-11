@@ -110,18 +110,17 @@ header{
 }
 .page{
     margin-left: 60px;
-width: -webkit-fill-available;
     height: 100vh;
     display: flex;
     background: #f1f7ff;
     gap: 20px;
 }
-.page .left{
+/* .page .left{
 width: 30%;
 }
 .page .right{
 width: 70%;
-}
+} */
 .left .title{
     display: flex;
     margin-top: 80px;
@@ -139,7 +138,7 @@ font-weight: 600;
 }
 .left .card{
     background: #FFFFFF;
-    width: 370px;
+    /* width: 370px; */
     height: 350px;
     margin-top: 20px;
     margin-left: 25px;
@@ -263,7 +262,7 @@ font-weight: 700;
 
 .right .btn{
     display: flex;
-   margin-left: 772px;
+   margin-left: 735px;
    margin-top: 80px;
     border: none;
 }
@@ -288,7 +287,7 @@ margin: 10px;
     font-size: 14px;
 }
 .right .topRight{
-    width: 900px;
+    width: 865px;
     height: 50px;
     background: #FFFFFF;
     display: flex;
@@ -297,7 +296,7 @@ margin: 10px;
 .topRight .div1{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 .div1 .sortBy{
     display: flex;
@@ -331,7 +330,7 @@ display: flex;
 .topRight .div2{
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 .div2 .div2img2{
     width: 18px;
@@ -339,8 +338,8 @@ display: flex;
 }
 .right .cardRight{
     margin-top: 10px;
-    width: 900px;
-    height: 520px;
+    width: 865px;
+    height: 565px;
     background: #FFFFFF;
 
 }
@@ -536,35 +535,37 @@ table td {
 .white{
     color:#FFFFFF;
 }
-.invoiced{
-    margin-left: 45px;
+
+.tag{
+    padding: 6px 12px;
+    border-radius: 24px;
+    background-color: #f0f0f0;
+    width: fit-content;
+}
+
+.tag-error{
     color: #FFFFFF;
     background: #5A91D6;
-    border-radius:35%;
-    width: 64px;
-    height: 18px;
 }
-.DueDate{
-    margin-left: 45px;
+
+.tag-warning{
     color: #FFFFFF;
     background: #FFAB49;
-    border-radius: 40%;
-    width: 64px;
-    height: 18px;
 }
-.Paid{
-    margin-left: 45px;
+.tag-sccuss{
     color: #FFFFFF;
     background: #5AD6B0;
-    border-radius: 40%;
-    width: 44px;
-    height: 18px;
 }
-.Overdue{
-    margin-left: 45px;
-    color: #FFFFFF;
+.tag-over{ color: #FFFFFF;
     background: #EE5D70;
-    border-radius: 40%;
-    width: 65px;
-    height: 18px;
+}
+
+.tag-due{
+        color: #FFFFFF;
+        background: #FFAB49;
+}
+
+.status{
+display: flex;
+justify-content:center;
 }
